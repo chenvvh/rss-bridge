@@ -117,7 +117,7 @@ class TelegramBridge extends BridgeAbstract {
 			$message .= $messageDiv->find('div.tgme_widget_message_text.js-message_text', 0);
 
 			$this->itemTitle = $this->ellipsisTitle(
-				$messageDiv->find('div.tgme_widget_message_text.js-message_text', 0)->plaintext
+				$messageDiv->find('div.tgme_widget_message_text.js-message_text', 0)
 			);
 		}
 
