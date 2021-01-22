@@ -293,7 +293,7 @@ EOD;
 		$length = 100;
 
 		if (strlen($text) > $length) {
-			$text = explode('<br\/><br\/>', $text);
+			$text = explode('<br/><br/>', $text);
 			return $text[1];
 		}
 		return $text;
