@@ -293,8 +293,8 @@ EOD;
 		$length = 100;
 
 		if (strlen($text) > $length) {
-			$text = explode('<br>', wordwrap($text, $length, '<br>'));
-			return $text[0] . '...';
+			$text = explode('<br><br>', $text);
+			return $text[1];
 		}
 		return $text;
 	}
